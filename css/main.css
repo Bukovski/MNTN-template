@@ -37,7 +37,8 @@ body {
 }
 
 .header__logo-link,
-.header__link {
+.header__link,
+.article__button {
   display: inline-block;
   text-decoration: none;
   color: var(--color-white);
@@ -151,6 +152,14 @@ body {
   text-decoration: none;
 }
 
+.hero:hover .hero__scroll {
+  color: var(--color-orange);
+}
+
+.hero:hover .hero__icon {
+  fill: var(--color-orange);
+}
+
 .hero__wrap {
   display: flex;
   justify-content: center;
@@ -158,14 +167,16 @@ body {
   height: 100%;
 }
 
-.hero__category {
+.hero__category,
+.article__category {
   text-transform: uppercase;
   letter-spacing: 0.33rem;
   font-weight: bold;
   color: var(--color-orange);
 }
 
-.hero__category::before {
+.hero__category::before,
+.article__category::before {
   content: "";
   display: inline-block;
   position: relative;
@@ -175,21 +186,25 @@ body {
   border-top: 2px solid var(--color-orange);
 }
 
-.hero__title {
+.hero__title,
+.article__title {
   margin: 1.5rem 0;
 
   font-family: var(--fonts-chronicle);
-  font-size: 4.68rem;
 
-  text-transform: capitalize;
   line-height: 5.55rem;
 
   color: var(--color-white);
 }
 
+.hero__title {
+  font-size: 4.68rem;
+  text-transform: capitalize;
+}
+
 .hero__scroll {
   color: var(--color-white);
-
+  transition: color .5s ease-out;
 }
 
 .hero__icon {
@@ -201,8 +216,85 @@ body {
   height: 24px;
 
   fill: var(--color-white);
+  transition: fill .5s ease-out;
 }
 
+
+/*------------------ ARTICLE ------------------*/
+
+.content {
+  max-width: 1470px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.article__wrap {
+  max-width: 632px;
+  width: 100%;
+}
+
+.article__wrap::before {
+  display: block;
+  content: attr(data-number);
+
+  position: absolute;
+
+  font-weight: bold;
+  font-size: 13.33rem;
+  color: rgba(255, 255, 255, .1);
+}
+
+.article__category {
+}
+
+.article__title {
+  font-size: 3.55rem;
+  line-height: 4.35rem;
+  letter-spacing: -0.03rem;
+}
+
+.article__text {
+  margin-bottom: 1.4rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.article__button {
+  color: var(--color-orange);
+}
+
+.article__icon {
+  position: relative;
+  top: 3px;
+  left: 15px;
+
+  width: 24px;
+  height: 16px;
+  fill: var(--color-orange);
+}
+
+.article__image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 566px;
+  width: 100%;
+}
+
+.article__image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
 
 
 
