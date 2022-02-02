@@ -233,12 +233,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  margin: 15px auto;
 }
 
 .article__wrap {
-  max-width: 632px;
+  display: flex;
+  justify-content: center;
   width: 100%;
+
+  position: relative;
 }
 
 .article__wrap::before {
@@ -246,12 +249,19 @@ body {
   content: attr(data-number);
 
   position: absolute;
+  line-height: 0.4;
+  left: -32px;
+  top: 0;
 
   font-weight: bold;
   font-size: 13.33rem;
   color: rgba(255, 255, 255, .1);
 }
 
+.article__info {
+  max-width: 632px;
+  width: 100%;
+}
 .article__category {
 }
 
