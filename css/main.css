@@ -1,6 +1,5 @@
 :root {
   --fonts-chronicle: "ChronicleDisplay", Georgia, "Century Schoolbook L", serif;
-  --fonts-giligan: "GiliganExtraBold", "Arial Black", Gadget, "Nimbus Sans L", sans-serif;
   --fonts-gilroy: "Gilroy", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 
   --color-white: #fff;
@@ -26,6 +25,11 @@ body {
   opacity: 1;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--color-orange);
+}
 
 .main-wrapper {
   margin: 0;
@@ -396,18 +400,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------ FONTS ------------------*/
 
 @font-face {
@@ -432,18 +424,6 @@ body {
   url(../fonts/ChronicleDisplaySemibold/ChronicleDisplaySemibold.ttf) format('truetype'),
   url(../fonts/ChronicleDisplaySemibold/ChronicleDisplaySemibold.svg#Chronicle%20Display%20Semibold) format('svg'),
   url(../fonts/ChronicleDisplaySemibold/ChronicleDisplaySemibold.otf) format('otf');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'GiliganExtraBold';
-  src: local('GiliganExtraBold'), url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.eot);
-  src: url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.eot?#iefix) format('embedded-opentype'),
-  url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.woff2) format('woff2'),
-  url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.woff) format('woff'),
-  url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.ttf) format('truetype'),
-  url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.svg#Giligan%20ExtraBold%20Regular) format('svg'),
-  url(../fonts/GiliganExtraBold/GiliganExtraBoldRegular.otf) format('otf');
   font-weight: 400;
 }
 
