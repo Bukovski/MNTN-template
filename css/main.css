@@ -65,6 +65,19 @@ img {
   padding: 0 15px;
 }
 
+/*------ scroll webkit only ------*/
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--color-orange);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
 /*------------------ HEADER -----------------*/
 
 .header {
@@ -451,3 +464,7 @@ img {
   url(../fonts/GilroyMedium/Gilroy-Medium.woff2) format('woff2');
   font-weight: 500;
 }
+
+/*------------------ MEDIA ------------------*/
+
+
