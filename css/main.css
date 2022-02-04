@@ -342,8 +342,12 @@ img {
 }
 
 .article:nth-child(even) .article__wrap {
-  justify-content: right;
+  justify-content: end;
 }
+
+/*.article:nth-child(even) .article__info {*/
+/*  margin-left: 8rem;*/
+/*}*/
 
 
 /*------------------ FOOTER ------------------*/
@@ -492,6 +496,10 @@ img {
     font-size: 3.5rem;
   }
 
+  .article {
+    padding: 65px 0;
+  }
+
   .article__info {
     margin-left: 5rem;
   }
@@ -503,8 +511,13 @@ img {
     font-size: 9rem;
   }
 
+  .article__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
   .footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
