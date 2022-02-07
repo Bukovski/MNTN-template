@@ -7,6 +7,11 @@
   --color-dark: #0B1D26;
 }
 
+/* mouse select color */
+::-moz-selection{ background: var(--color-orange); color: var(--color-dark); }
+::webkit-selection{ background: var(--color-orange); color: var(--color-dark); }
+::selection{ background: var(--color-orange); color: var(--color-dark); }
+
 * {
   box-sizing: border-box;
 }
