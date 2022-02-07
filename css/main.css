@@ -31,6 +31,11 @@ img {
   background-color: var(--color-orange);
 }
 
+a[href]:not([class]) { /* Default style for links */
+  color: #008000;
+  text-decoration: underline;
+}
+
 .main-wrapper {
   margin: 0;
   width: 100%;
@@ -157,9 +162,6 @@ img {
 }
 
 .header__access-icon {
-  width: 24px;
-  height: 24px;
-
   position: relative;
   top: 6px;
   fill: var(--color-white);
@@ -241,9 +243,6 @@ img {
   left: 11px;
   top: 5px;
 
-  width: 16px;
-  height: 24px;
-
   fill: var(--color-white);
   transition: fill .5s ease-out;
 }
@@ -252,6 +251,7 @@ img {
 /*------------------ ARTICLE ------------------*/
 
 .content {
+  min-height: calc(100vh - 15rem); /* sticky footer */
   margin-top: 20rem;
 }
 
@@ -314,8 +314,6 @@ img {
   top: 3px;
   left: 15px;
 
-  width: 24px;
-  height: 16px;
   fill: var(--color-orange);
 }
 
