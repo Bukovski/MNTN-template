@@ -68,6 +68,14 @@ a[href]:not([class]) { /* Default style for links */
   color: var(--color-orange)
 }
 
+.article__button:hover {
+  color: var(--color-white)
+}
+
+.article__button:hover .article__icon {
+  fill: var(--color-white);
+}
+
 .container {
   max-width: 1490px;
   width: 100%;
